@@ -1,0 +1,84 @@
+
+@charset "utf-8";
+.map{
+	position:relative;
+}
+svg { width: 100%;}
+#brazil_content, #belize_content, #colombia_content, #ecuador_content, #guatemala_content, #guyana_content, #honduras_content, #nicaragua_content, #panama_content, #peru_content, #suriname_content, #bolivia_content, #venezuela_content, #frenchGuiana_content{
+	display:none;
+}
+/*Path hot spots*/
+#belize_g:hover path, path#colombia:hover, path#peru:hover, path#frenchGuiana:hover, #venezuela_g:hover path, path#guatemala:hover, #panama_g:hover path, path#suriname:hover, #brazil_g:hover path, path#guyana:hover, #ecuadorIsLand:hover path, #bolivia_g:hover path, path#nicaragua:hover, #honduras_g:hover path { transition: .6s fill; fill:#F08400; cursor:pointer; stroke: transparent; }
+#belize_g path, path#colombia, path#peru, path#guatemala, #panama_g path, path#suriname, #brazil_g path, path#guyana, #ecuadorIsLand path, path#nicaragua, #honduras_g path{fill:#056839; stroke:#050505; stroke-width:0.3; stroke-miterlimit:10;}
+#venezuela_g path, #bolivia_g path{fill:#8DC63F; stroke:#050505; stroke-width:0.3; stroke-miterlimit:10;}
+path#frenchGuiana{fill:#1db404; stroke:#050505; stroke-width:0.3; stroke-miterlimit:10;}
+path#nicaragua, path#guatemala, path#colombia, path#guyana, path#suriname, path#frenchGuiana{
+	stroke-width:1.1 !important;
+}
+path#peru {
+	stroke-width:1.2 !important;
+}
+#brazil_g path, #ecuadorIsLand path {
+	stroke-width:0.28 !important;
+}
+#ec_1_ path{
+	display:none;
+}
+strong, b {
+font-weight: bold;
+}
+.popup {
+    position:fixed;
+    top:0px;
+    left:0px;
+	bottom:0px;
+	right:0px;	
+    margin:auto;
+    width:400px;
+    height:230px;
+	line-height:normal;
+    font-size:12px;
+    padding:10px;
+    border:1px solid #aaaaaa;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    z-index:99999;
+	color: #630;
+}
+h2.contry_name{
+	color:#000;
+	border-bottom:#ddd3b8 dashed 1px;
+	margin-bottom:0.5em;
+	font-size: 1.2rem;
+}	
+
+.cancel {
+    display:relative;
+    cursor:pointer;
+    margin:0;
+    float:right;
+    height: 1.3em;
+    width: 1.4em;
+    padding:5px;
+    background-color:#056839;
+    text-align:center;
+    font-weight:bold;
+    font-size:11px;
+    color:white;
+    border-radius:3px;
+    z-index:99999;
+}
+
+.cancel:hover {
+    background:#F08400;
+}
+
